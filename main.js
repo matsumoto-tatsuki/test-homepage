@@ -1,4 +1,4 @@
-import './style.css'
+
 
 document.addEventListener('DOMContentLoaded', () => {
   setupScrollAnimation();
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
  */
 function setupScrollAnimation() {
   const animatedElements = document.querySelectorAll('.fade-in, .fade-in-up');
-  
+
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -50,7 +50,7 @@ function setupHeaderScroll() {
 function setupMobileMenu() {
   const btn = document.querySelector('.mobile-menu-btn');
   const nav = document.querySelector('.nav-links');
-  
+
   if (!btn || !nav) return;
 
   btn.addEventListener('click', () => {
@@ -59,7 +59,7 @@ function setupMobileMenu() {
     // In a real app, you might want a sliding drawer.
     const isExpanded = btn.getAttribute('aria-expanded') === 'true';
     btn.setAttribute('aria-expanded', !isExpanded);
-    
+
     // Toggle a class to show/hide
     nav.style.display = isExpanded ? 'none' : 'flex';
     nav.style.flexDirection = 'column';
