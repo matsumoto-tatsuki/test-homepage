@@ -3,32 +3,34 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="都心の極上プライベートジム「BODY CRAFT」。完全個室、プロフェッショナルなトレーナーによるマンツーマン指導で、あなたの理想のボディメイクを実現します。" />
+  <meta name="description" content="変われる。あなたも、何度でも。トレーナー大和拓海の公式サイト。" />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- 誠実さと温かみを出すため、Noto Serif JP (明朝) と Zen Kaku Gothic New (ゴシック) を採用 -->
   <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Oswald:wght@500;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap"
     rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="./style.css">
 
-  <title>BODY CRAFT | 理想を超える、至高のボディメイク</title>
+  <title>TAKUMI YAMATO | Official Site</title>
 </head>
 
 <body>
+  <!-- Header -->
   <header id="header">
     <div class="container header-container">
-      <a href="#" class="logo">BODY CRAFT</a>
+      <a href="#" class="logo">Takumi Yamato.</a>
       <nav>
         <ul class="nav-links">
-          <li><a href="#concept">CONCEPT</a></li>
-          <li><a href="#features">FEATURES</a></li>
-          <li><a href="#trainers">TRAINERS</a></li>
-          <li><a href="#price">PRICE</a></li>
-          <li><a href="#contact" class="btn-primary-sm">無料体験予約</a></li>
+          <li><a href="#story">Story</a></li>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#career">Career</a></li>
+          <li><a href="#contact" class="btn-primary-sm">ご予約</a></li>
         </ul>
         <button class="mobile-menu-btn" aria-label="メニューを開く">
           <span></span>
@@ -40,199 +42,224 @@
   </header>
 
   <main>
-    <!-- Hero Section -->
+    <!-- 1. Hero Section -->
     <section id="hero" class="hero">
-      <div class="hero-bg">
-        <!-- 画像は後ほど生成して配置 -->
-        <img src="./hero_bg.webp" alt="高級感のあるジム内装" class="hero-image" id="hero-img">
-        <div class="overlay"></div>
-      </div>
-      <div class="hero-content fade-in-up">
-        <p class="hero-subtitle">BEYOND YOUR IDEAL</p>
-        <h1 class="hero-title">理想を超える<br>至高のボディメイク</h1>
-        <p class="hero-description">
-          完全個室のプライベート空間で、<br>
-          あなただけの美しさを彫刻する。
-        </p>
-        <a href="#contact" class="btn-primary">無料カウンセリングへ</a>
-      </div>
-    </section>
-
-    <!-- Concept Section -->
-    <section id="concept" class="section">
-      <div class="container">
-        <div class="section-header fade-in">
-          <h2 class="section-title">CONCEPT</h2>
-          <p class="section-jp-title">コンセプト</p>
+      <div class="container hero-container">
+        <div class="hero-image-wrapper fade-in">
+          <!-- 画像: hero_portrait.webp (自然光の入る明るい写真やトレーニング風景) -->
+          <img src="./hero_portrait.webp" alt="Takumi Yamato" class="hero-img"
+            onerror="this.parentElement.classList.add('no-image', 'light')">
         </div>
-        <div class="concept-content fade-in-up">
-          <h3 class="concept-lead">
-            「ただ痩せる」ではない。<br>
-            「美しく変わる」体験を。
-          </h3>
-          <p class="concept-text">
-            BODY CRAFTは、単なる減量を提供するジムではありません。<br>
-            骨格や体質に合わせた、あなただけのオーダーメイドトレーニング。<br>
-            一流のトレーナーによる徹底したサポートと、洗練された空間。<br>
-            これら全てが融合し、あなたの人生を輝かせるボディメイクを実現します。
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features" class="section bg-dark">
-      <div class="container">
-        <div class="section-header fade-in">
-          <h2 class="section-title">FEATURES</h2>
-          <p class="section-jp-title">選ばれる理由</p>
-        </div>
-        <div class="features-grid">
-          <div class="feature-card fade-in-up">
-            <div class="feature-img-wrapper">
-              <img src="./training_session.webp" alt="マンツーマントレーニング" class="feature-img">
-            </div>
-            <div class="feature-text">
-              <h3>01. 完全個室のプライベート空間</h3>
-              <p>誰の目も気にせず、トレーニングに集中できる洗練された個室をご用意。最高級のマシンと共に、贅沢な時間をお過ごしください。</p>
-            </div>
-          </div>
-          <div class="feature-card fade-in-up delay-100">
-            <div class="feature-img-wrapper">
-              <img src="./healthy_meal.webp" alt="食事指導" class="feature-img">
-            </div>
-            <div class="feature-text">
-              <h3>02. 科学に基づいた食事管理</h3>
-              <p>過度な制限は行いません。ライフスタイルに合わせ、美味しく食べて痩せるメソッドを提案。一生続けられる知識が身につきます。</p>
-            </div>
-          </div>
-          <div class="feature-card fade-in-up delay-200">
-            <div class="feature-img-wrapper">
-              <!-- アイコンや別の画像に差し替え可能 -->
-              <div class="feature-icon-placeholder">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                  class="icon-lg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
-                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                </svg>
-              </div>
-            </div>
-            <div class="feature-text">
-              <h3>03. 充実のアメニティ・ウェア完備</h3>
-              <p>トレーニングウェア、タオル、シューズ、アメニティまで全て無料レンタル。お仕事帰りや買い物ついでに手ぶらで通えます。</p>
+        <div class="hero-content fade-in-up">
+          <p class="hero-catch">変われる。<br>あなたも、何度でも。</p>
+          <p class="hero-sub">才能なんて関係ない。<br>必要なのは、「変わりたい」という想いと、<br>正しい一歩を踏み出す勇気だけ。</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn-primary">体験トレーニングを予約する</a>
+            <div class="hero-sns">
+              <a href="#" aria-label="Instagram">Instagram</a>
+              <span>/</span>
+              <a href="#" aria-label="X (Twitter)">X (Twitter)</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Trainers Section -->
-    <section id="trainers" class="section">
+    <!-- 4. Story Section (体験談ストーリー) -->
+    <!-- 構成順序を入れ替え、Heroの直後にストーリーを持ってくることで共感を生む -->
+    <section id="story" class="section story-section">
       <div class="container">
-        <div class="section-header fade-in">
-          <h2 class="section-title">TRAINERS</h2>
-          <p class="section-jp-title">トレーナー紹介</p>
-        </div>
-        <div class="trainer-card fade-in-up">
-          <div class="trainer-img-wrapper">
-            <img src="./trainer_portrait.webp" alt="チーフトレーナー" class="trainer-img">
-          </div>
-          <div class="trainer-info">
-            <p class="trainer-role">Chief Trainer</p>
-            <h3 class="trainer-name">TAKUMI YAMATO</h3>
-            <p class="trainer-en-name">大和 拓海</p>
-            <p class="trainer-bio">
-              大手パーソナルジムで年間200名以上のボディメイクを担当。
-              解剖学に基づいた的確なフォーム指導と、モチベーションを引き出すコーチングに定評がある。
-              「身体が変われば、心も変わる」をモットーに、お客様の人生を変えるサポートを行う。
+        <div class="section-label fade-in">MY STORY</div>
+        <h2 class="section-title fade-in">すべては、<br>コンプレックスから始まった。</h2>
+
+        <div class="story-content">
+          <div class="story-block fade-in-up">
+            <p>
+              今でこそトレーナーとして活動していますが、<br>
+              かつての私は、自分の体型に強いコンプレックスを抱えていました。
             </p>
-            <ul class="trainer-specs">
-              <li>NSCA-CPT 認定パーソナルトレーナー</li>
-              <li>ベストボディ・ジャパン 2023 グランプリ</li>
-            </ul>
+            <p>
+              食べることが大好きで、運動は苦手。<br>
+              鏡を見るたびに「どうせ自分なんて」と目を背ける日々。<br>
+              ダイエットに挑戦しては挫折し、リバウンドを繰り返す。<br>
+              そんな「変われない自分」が何より大嫌いでした。
+            </p>
+          </div>
+
+          <div class="story-image-block fade-in-up">
+            <!-- ビフォーアフター画像などを想定 -->
+            <div class="story-img-wrapper">
+              <img src="./story_before_after.webp" alt="Before and After" class="story-img"
+                onerror="this.parentElement.classList.add('no-image', 'wide', 'light')">
+              <p class="caption">左：自信がなかった頃の私 / 右：現在の私</p>
+            </div>
+          </div>
+
+          <div class="story-block fade-in-up">
+            <h3>転機となった、「ある言葉」</h3>
+            <p>
+              転機は25歳の時でした。<br>
+              ふと立ち寄ったジムで、あるトレーナーに言われたのです。<br>
+              「身体作りは、自分との約束を守る練習だよ」と。
+            </p>
+            <p>
+              それまで私は「痩せること」＝「苦しい我慢」だと思っていました。<br>
+              でも違ったんです。小さな約束を守り、積み重ねる。<br>
+              昨日より1回多く持ち上げられた。先週より身体が軽い。<br>
+              その小さな成功体験が、失っていた自己肯定感を少しずつ取り戻してくれました。
+            </p>
+          </div>
+
+          <div class="story-block highlight fade-in-up">
+            <p>
+              身体が変われば、心が変わり、人生が変わる。<br>
+              私が身をもって体験したこの感動を、<br>
+              次はあなたに伝えたいのです。
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Price Section -->
-    <section id="price" class="section bg-dark">
+    <!-- 2. Profile Section -->
+    <section id="profile" class="section bg-gray">
       <div class="container">
-        <div class="section-header fade-in">
-          <h2 class="section-title">PRICE</h2>
-          <p class="section-jp-title">料金プラン</p>
-        </div>
-        <div class="price-cards">
-          <!-- Normal Plan -->
-          <div class="price-card fade-in-up">
-            <h3 class="plan-name">STANDARD</h3>
-            <p class="plan-desc">基本のボディメイクコース</p>
-            <div class="plan-price">
-              <span class="currency">¥</span>
-              <span class="amount">198,000</span>
-              <span class="term">/ 2ヶ月</span>
+        <div class="profile-wrapper">
+          <div class="profile-info fade-in-up">
+            <div class="section-label">PROFILE</div>
+            <h2 class="profile-name">大和 拓海 <span class="en">Takumi Yamato</span></h2>
+            <div class="profile-tags">
+              <span>📍 東京・青山 / オンライン</span>
+              <span>🏋️ Body Makeup</span>
             </div>
-            <ul class="plan-features">
-              <li>全16回 (週2回 × 60分)</li>
-              <li>食事管理サポート</li>
-              <li>ウェア・タオル無料レンタル</li>
-              <li>プロテイン毎回1杯無料</li>
-            </ul>
-            <a href="#contact" class="btn-outline">申し込む</a>
+            <p class="profile-desc">
+              1995年生まれ。パーソナルトレーナー。<br>
+              「無理なく続けられるボディメイク」をテーマに、<br>
+              これまで2,000名以上のお客様をサポート。<br>
+              ただ鍛えるだけでなく、姿勢改善や食事指導を含めた<br>
+              トータルバランスの調整を得意とする。
+            </p>
+            <div class="profile-values">
+              <h3>大切にしていること</h3>
+              <ul>
+                <li>否定しない。まずはあなたの想いを聞きます。</li>
+                <li>「なぜやるのか」を丁寧に説明します。</li>
+                <li>生活スタイルに合わせた「続く方法」を提案します。</li>
+              </ul>
+            </div>
           </div>
-          <!-- Premium Plan -->
-          <div class="price-card featured fade-in-up delay-100">
-            <div class="recommended-badge">POPULAR</div>
-            <h3 class="plan-name">PREMIUM</h3>
-            <p class="plan-desc">短期集中・結果重視コース</p>
-            <div class="plan-price">
-              <span class="currency">¥</span>
-              <span class="amount">298,000</span>
-              <span class="term">/ 3ヶ月</span>
-            </div>
-            <ul class="plan-features">
-              <li>全24回 (週2回 × 75分)</li>
-              <li>徹底食事管理サポート (LINE)</li>
-              <li>ウェア・タオル無料レンタル</li>
-              <li>プロテイン・サプリメント無料</li>
-              <li>リバウンド防止保証 (1ヶ月)</li>
-            </ul>
-            <a href="#contact" class="btn-primary">申し込む</a>
+          <!-- プロフィール画像: profile_casual.webp (自然な笑顔) -->
+          <div class="profile-image fade-in-up delay-100">
+            <img src="./profile_casual.webp" alt="Takumi Yamato Profile" class="prof-img"
+              onerror="this.parentElement.classList.add('no-image', 'light')">
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-      <div class="container contact-wrapper">
-        <div class="section-header fade-in">
-          <h2 class="section-title">CONTACT</h2>
-          <p class="section-jp-title">無料カウンセリング予約</p>
+    <!-- 3. Career Section -->
+    <section id="career" class="section">
+      <div class="container">
+        <div class="section-header text-center fade-in">
+          <div class="section-label">CAREER & SKILLS</div>
+          <h2 class="section-h2">歩んできた道</h2>
         </div>
-        <div class="contact-form-container fade-in-up">
-          <p class="contact-lead">
-            まずは無料カウンセリングで、あなたのお悩みをお聞かせください。<br>
-            無理な勧誘は一切ございません。
+
+        <div class="career-grid">
+          <div class="career-card fade-in-up">
+            <h3>Contest</h3>
+            <p class="career-sub">大会実績</p>
+            <ul class="career-list">
+              <li>Best Body Japan 2023 公認グランプリ</li>
+              <li>Summer Style Award 2022 3位</li>
+              <li>JBBF フィジーク地区大会 優勝</li>
+            </ul>
+          </div>
+
+          <div class="career-card fade-in-up delay-100">
+            <h3>Certification</h3>
+            <p class="career-sub">保有資格</p>
+            <ul class="career-list">
+              <li>NSCA-CPT (全米公認トレーナー)</li>
+              <li>NESTA-PFT</li>
+              <li>栄養コンシェルジュ 2つ星</li>
+            </ul>
+          </div>
+
+          <div class="career-card fade-in-up delay-200">
+            <h3>Achievement</h3>
+            <p class="career-sub">指導実績</p>
+            <div class="career-number">
+              <span class="num">2,000</span>
+              <span class="unit">名以上</span>
+            </div>
+            <p class="career-desc">初心者からモデルまで幅広く担当</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. SNS Section -->
+    <section id="sns" class="section bg-blue-light">
+      <div class="container text-center">
+        <div class="section-label fade-in">INSTAGRAM</div>
+        <h2 class="section-h2 icon-heading fade-in">
+          <span class="insta-icon">📷</span> 日々の活動を発信中
+        </h2>
+        <p class="sns-message fade-in-up">
+          トレーニングのコツや食事管理の豆知識、<br>
+          そして私自身の日常をストーリーズで毎日更新しています。<br>
+          人となりを知っていただくためにも、ぜひ覗いてみてください。
+        </p>
+        <div class="sns-btn-wrapper fade-in-up">
+          <a href="#" class="btn-insta">
+            <span class="icon">Follow Me</span>
+            @takumi_fit
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Contact Form -->
+    <section id="contact" class="section">
+      <div class="container contact-container">
+        <div class="section-header text-center fade-in">
+          <div class="section-label">CONTACT</div>
+          <h2 class="section-h2">あなたの「変わりたい」を<br>全力で応援します。</h2>
+        </div>
+
+        <div class="contact-box fade-in-up">
+          <p class="contact-note">
+            まずはお悩みを聞かせてください。<br>
+            無理な勧誘は一切いたしませんので、ご安心ください。
           </p>
+
           <form class="contact-form" onsubmit="event.preventDefault(); alert('デモサイトのため送信されません。');">
             <div class="form-group">
-              <label for="name">お名前 <span class="required">必須</span></label>
-              <input type="text" id="name" name="name" placeholder="山田 太郎" required>
+              <label for="name">お名前 <span class="req">必須</span></label>
+              <input type="text" id="name" name="name" required placeholder="例：大和 太郎">
             </div>
+
             <div class="form-group">
-              <label for="email">メールアドレス <span class="required">必須</span></label>
-              <input type="email" id="email" name="email" placeholder="example@bodycraft.jp" required>
+              <label for="email">メールアドレス <span class="req">必須</span></label>
+              <input type="email" id="email" name="email" required placeholder="example@email.com">
             </div>
+
             <div class="form-group">
-              <label for="plan">ご希望プラン</label>
-              <select id="plan" name="plan">
-                <option value="">選択してください</option>
-                <option value="counseling">無料カウンセリングのみ</option>
-                <option value="standard">STANDARDコース</option>
-                <option value="premium">PREMIUMコース</option>
-              </select>
+              <label>目的（複数選択可）</label>
+              <div class="checkbox-group">
+                <label><input type="checkbox" name="purpose" value="diet"> ダイエット</label>
+                <label><input type="checkbox" name="purpose" value="muscle"> 筋力アップ・ボディメイク</label>
+                <label><input type="checkbox" name="purpose" value="health"> 健康維持・姿勢改善</label>
+                <label><input type="checkbox" name="purpose" value="contest"> 大会出場</label>
+              </div>
             </div>
+
+            <div class="form-group">
+              <label for="message">メッセージ</label>
+              <textarea id="message" name="message" rows="5" placeholder="ご質問や、現在のお悩みがあれば簡単にご記入ください。"></textarea>
+            </div>
+
             <button type="submit" class="btn-submit">送信する</button>
           </form>
         </div>
@@ -241,27 +268,19 @@
   </main>
 
   <footer class="footer">
-    <div class="container footer-content">
-      <div class="footer-info">
-        <a href="#" class="footer-logo">BODY CRAFT</a>
-        <p class="address">
-          〒107-0062<br>
-          東京都港区南青山3-1-1<br>
-          BODY CRAFT ビル 2F
-        </p>
-        <p class="tel">03-1234-5678</p>
-        <p class="hours">営業時間: 07:00 - 23:00 (不定休)</p>
-      </div>
-      <div class="footer-links">
-        <ul>
-          <li><a href="#">会社概要</a></li>
-          <li><a href="#">プライバシーポリシー</a></li>
-          <li><a href="#">特定商取引法に基づく表記</a></li>
+    <div class="container">
+      <div class="footer-inner">
+        <a href="#" class="footer-logo">Takumi Yamato.</a>
+        <ul class="footer-links">
+          <li><a href="#story">Story</a></li>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#career">Career</a></li>
+          <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
         </ul>
       </div>
-    </div>
-    <div class="copyright">
-      &copy; 2024 BODY CRAFT All Rights Reserved.
+      <div class="copyright">
+        &copy; 2024 Takumi Yamato All Rights Reserved.
+      </div>
     </div>
   </footer>
 
