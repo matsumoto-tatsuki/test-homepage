@@ -6,14 +6,13 @@ import Story from './components/Story';
 import Profile from './components/Profile';
 import Career from './components/Career';
 import SNS from './components/SNS';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
   // スクロール時に要素をフェードインさせるアニメーション設定
   useEffect(() => {
     const animatedElements = document.querySelectorAll('.fade-in, .fade-in-up');
-    
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -28,7 +27,7 @@ function App() {
     });
 
     animatedElements.forEach(el => observer.observe(el));
-    
+
     // クリーンアップ
     return () => observer.disconnect();
   }, []);
@@ -42,7 +41,6 @@ function App() {
         <Profile />
         <Career />
         <SNS />
-        <Contact />
       </main>
       <Footer />
     </>

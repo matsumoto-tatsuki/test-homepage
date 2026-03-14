@@ -19,9 +19,9 @@ export default function Header() {
       <div className="container header-container">
         <a href="#" className="logo">Takumi Yamato.</a>
         <nav>
-          <ul 
-            className="nav-links" 
-            style={isMenuOpen ? { 
+          <ul
+            className="nav-links"
+            style={isMenuOpen ? {
               display: 'flex',
               flexDirection: 'column',
               position: 'absolute',
@@ -37,11 +37,10 @@ export default function Header() {
             <li><a href="#story" onClick={() => setIsMenuOpen(false)}>Story</a></li>
             <li><a href="#profile" onClick={() => setIsMenuOpen(false)}>Profile</a></li>
             <li><a href="#career" onClick={() => setIsMenuOpen(false)}>Career</a></li>
-            <li><a href="#contact" className="btn-primary-sm" onClick={() => setIsMenuOpen(false)}>ご予約</a></li>
           </ul>
-          <button 
-            className="mobile-menu-btn" 
-            aria-label="メニューを開く" 
+          <button
+            className="mobile-menu-btn"
+            aria-label="メニューを開く"
             aria-expanded={isMenuOpen}
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >

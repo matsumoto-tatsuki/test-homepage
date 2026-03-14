@@ -46,7 +46,6 @@ npm run dev
 │   │   ├── Profile.jsx     # プロフィール
 │   │   ├── Career.jsx      # 実績・資格セクション
 │   │   ├── SNS.jsx         # Instagram等への導線
-│   │   ├── Contact.jsx     # お問い合わせフォーム
 │   │   └── Footer.jsx      # フッター
 │   ├── styles/             # カスケーディングスタイルシート
 │   │   └── style.css       # 全体のデザイン定義
